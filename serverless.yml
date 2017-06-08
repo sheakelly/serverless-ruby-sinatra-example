@@ -1,0 +1,22 @@
+service: nib-sceptre-api
+
+provider:
+  name: aws
+  region: ap-southeast-2
+  runtime: nodejs4.3
+
+package:
+  include:
+    - ruby-bin/**
+  exclude:
+    - packaging/**
+    - app/**
+
+functions:
+  execute:
+    handler: shim.handler
+    timeout: 45
+    events:
+      - http:
+          path: /{proxy+}
+          method: ANY

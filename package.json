@@ -1,0 +1,14 @@
+{
+  "name": "sceptre-api",
+  "version": "1.0.0",
+  "description": "An api for sceptre",
+  "repository": {
+    "type": "git",
+    "url": "git@git.nib.com.au:nib-au/sceptre-api.git"
+  },
+  "author": "Shea Kelly",
+  "license": "ISC",
+  "devDependencies": {
+    "request": "^2.79.0"
+  }
+}

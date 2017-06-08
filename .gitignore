@@ -1,0 +1,6 @@
+packaging
+ruby-bin
+.serverless
+node_modules
+log
+tmp
